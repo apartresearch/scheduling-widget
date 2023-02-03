@@ -1,39 +1,58 @@
 <style>
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+  }
+
   .calendar {
     color: #fff;
     background-color: #000;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", sans-serif;
   }
 
   .calendar div {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 10px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
   }
 
   .calendar p {
     margin: 0;
+    margin-bottom: 5px;
   }
 
   .calendar span {
-    font-weight: bold;
     margin-right: 10px;
+    min-width: 200px;
+    padding: 5px 6px;
+    border-radius: 5px;
+    background-color: #ffffff30;
   }
 
   .calendar a {
     color: #48fc9b;
   }
+
+  .calendar .yourtimezone {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
 </style>
 
 <div class="calendar">
+  <p class="yourtimezone"><i>All times in your local timezone</i></p>
   <div>
     <p>
       <span id="intro">00:00</span
       ><a href="https://www.youtube.com/watch?v=gjKDCP0Rag4">Intro talk</a>
     </p>
     <p>
-      <span id="start">00:00</span> Start of hacking and
+      <span id="start">00:00</span>Start of hacking and
       <a href="https://app.gather.town/app/iEPL2kx1LY4OeKHv/Hackathon%20Space"
         >online workshop</a
       >
@@ -82,8 +101,8 @@
   setTime("officehours", "Feb 11, 2023 4:00:00 PM UTC");
   setTime("satdiscussion", "Feb 11, 2023 7:00:00 PM UTC");
   setTime("ceremonycst", "Feb 12, 2023 7:00:00 PM UTC");
-  setTime("ceremonypst", "Feb 13, 2023 4:00:00 AM UTC");
-  setTime("submission", "Feb 13, 2023 4:00:00 AM UTC");
+  setTime("ceremonypst", "Feb 13, 2023 2:00:00 AM UTC");
+  setTime("submission", "Feb 13, 2023 2:00:00 AM UTC");
   setTime("judging", "Feb 14, 2023 1:00:00 PM UTC");
   setTime("awardceremony", "Feb 14, 2023 7:00:00 PM UTC");
 </script>
