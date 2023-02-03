@@ -1,1 +1,1 @@
-return `<div class='calendar'>Calendar</div>`;
+return `<div class='calendar'>Calendar 2</div>`;
