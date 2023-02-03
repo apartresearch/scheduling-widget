@@ -1,1 +1,50 @@
-<div class="calendar">Calendar 2</div>
+<script>
+  var countDownDate = new Date("Feb 10, 2023 5:00:00 PM UTC").getTime();
+
+  let setTime = (id, time) => {
+    let date = new Date(time);
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    let timeString = `${day}/${month}/${year} ${hours}:${minutes}`;
+    document.getElementById(id).innerHTML = timeString;
+  };
+
+  setTime("intro", "Feb 10, 2023 5:00:00 PM UTC");
+  setTime("start", "Feb 10, 2023 6:00:00 PM UTC");
+  setTime("officehours", "Feb 11, 2023 4:00:00 PM UTC");
+  setTime("satdiscussion", "Feb 11, 2023 7:00:00 PM UTC");
+  setTime("ceremonycst", "Feb 12, 2023 7:00:00 PM UTC");
+  setTime("ceremonypst", "Feb 13, 2023 4:00:00 AM UTC");
+  setTime("submission", "Feb 13, 2023 4:00:00 AM UTC");
+  setTime("judging", "Feb 14, 2023 1:00:00 PM UTC");
+  setTime("awardceremony", "Feb 14, 2023 7:00:00 PM UTC");
+</script>
+
+<div class="calendar">
+  <div>
+    <p>
+      <span id="intro">00:00</span
+      ><a href="https://www.youtube.com/watch?v=gjKDCP0Rag4">Intro talk</a>
+    </p>
+    <p>
+      <span id="start">00:00</span> Start of hacking and
+      <a href="https://app.gather.town/app/iEPL2kx1LY4OeKHv/Hackathon%20Space"
+        >online workshop</a
+      >
+    </p>
+    <p><span id="officehours">00:00</span>Office hours</p>
+    <p>
+      <span id="satdiscussion">00:00</span>Project discussions on
+      <a href="https://discord.gg/3PUSbdS8gY">Discord</a>
+    </p>
+    <p><span id="ceremonycst">00:00</span>GMT+0 Ending ceremony</p>
+    <p><span id="ceremonypst">00:00</span>GMT-8 Ending ceremony</p>
+    <p><span id="submission">00:00</span>Submission deadline!</p>
+    <p><span id="judging">00:00</span>Community judging deadline</p>
+    <p><span id="awardceremony">Wed 18 Feb, 00:00</span>Award ceremony</p>
+  </div>
+</div>
